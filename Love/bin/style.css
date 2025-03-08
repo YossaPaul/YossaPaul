@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(22, 21, 21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+}
+.heart{
+    width: 100px;
+    height: 160px;
+    position: relative;
+    background-color: brown;
+    transform: rotate(45deg) scale(2.5);
+    border-radius: 200px 200px 0 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.heart::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    background-color: brown;
+    width: 100px;
+    height: 160px;
+    transform: rotate(-90deg);
+    border-radius: 200px 200px 0 0;
+
+}
+
+p#text{
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: 20px;
+    color: white;
+}
+
+.container{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 0 20px;
+}
+.container .bar{
+    width: 20px;
+    height: 40px;
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .bar a{
+    padding: 0 10px;
+    display: none;
+    text-decoration: none;
+    color: blue;
+    transition: .2s;
+}
+.container .bar a:hover{
+    color: rgb(172, 3, 3);
+}
+button#btn{
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+}
+button#btn p#index{
+    color: white;
+    font-family: sans-serif;
+}
+
